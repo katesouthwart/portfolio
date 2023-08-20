@@ -1,0 +1,80 @@
+body {
+  color: #3F2305;
+  background-color: #F2EAD3;
+}
+
+h1, h2 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #3F2305;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+#about {
+  height: 800px;
+}
+
+/* #projects {
+  height: 800px;
+} */
+
+#contact {
+  height: 150px;
+}
+
+.big-heading {
+  font-size: 78px;
+  padding-top: 100px;
+}
+
+
+.navbar-brand {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #3F2305;
+}
+
+.navbar-custom {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F2EAD3;
+}
+
+.nav-link {
+  color: #3F2305;
+
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #DFD7BF;
+  border-radius: 8px;
+}
+
+.project-img {
+  width: 95%;
+  height: auto;
+  border-radius: 8px;
+  border: solid #3F2305 3px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.project-img:hover {
+  border: solid #F5F5F5 3px;
+}
+
+.btn {
+  outline: none;
+}
