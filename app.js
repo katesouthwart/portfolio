@@ -14,14 +14,23 @@ app.set("layout", "./layouts/main");
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-
 app.get("/", (req, res) => {
-    res.render("home");
-  // if (req.user) {
-  //   res.redirect("/posts/timeline/all");
-  // } else {
-  //   res.render("home");
-  // }
+
+  const renderSkills = ["AJAX", "JQuery", "Mailchimp API", "Passport.js", "Google OAuth", "Day.js"];
+  const renderTechStack = ["Mongoose", "MongoDB", "Express.js", "Javascript", "EJS", "Bootstrap", "CSS", "HTML"];
+
+  const blogTechStack = ["Mongoose", "MongoDB", "Express.js", "Javascript", "EJS", "Bootstrap", "CSS", "HTML"];
+  const simonTechStack = ["Javascript", "JQuery", "CSS", "HTML"];
+  const diceTechStack = ["Javascript", "JQuery", "CSS", "HTML"];
+
+  res.render("home", {
+    title: "Kate Southwart",
+    renderSkills,
+    renderTechStack,
+    blogTechStack,
+    simonTechStack,
+    diceTechStack
+  });
 });
 
 app.listen(process.env.PORT || port, () => {

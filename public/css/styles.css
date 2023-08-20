@@ -3,7 +3,7 @@ body {
   background-color: #F2EAD3;
 }
 
-h1, h2 {
+h1, h2, h5 {
   font-family: "Noto Serif JP", serif;
   font-weight: 600;
 }
@@ -17,20 +17,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: white;
-}
-
 #about {
   height: 800px;
 }
 
-/* #projects {
-  height: 800px;
-} */
-
-#contact {
-  height: 150px;
+@media screen and (min-width: 992px) {
+  #about {
+    height: 95vh;
+  }
 }
 
 .big-heading {
@@ -38,6 +32,22 @@ a:hover {
   padding-top: 100px;
 }
 
+.btn {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+}
+
+.btn-outline-dark {
+  color: #3F2305;
+  border-color: #3F2305;
+}
+
+.btn-outline-dark:focus, .btn.active, .btn-outline-dark:active, .btn-outline-dark:hover {
+  background-color: #3F2305;
+  color: #F2EAD3;
+  box-shadow: none;
+  border-color: #3F2305;
+}
 
 .navbar-brand {
   font-family: "Noto Serif JP", serif;
@@ -53,7 +63,6 @@ a:hover {
 
 .nav-link {
   color: #3F2305;
-
 }
 
 .nav-link:hover {
@@ -66,15 +75,25 @@ a:hover {
   width: 95%;
   height: auto;
   border-radius: 8px;
-  border: solid #3F2305 3px;
+  border: solid #3F2305 1px;
   object-fit: cover;
   overflow: hidden;
 }
 
 .project-img:hover {
-  border: solid #F5F5F5 3px;
+  box-shadow: 0px 0px 11px 1px rgba(63,35,5,1);
 }
 
-.btn {
-  outline: none;
+.skill-text {
+  font-size: 14px;
+}
+
+.tag {
+  color: #3F2305;
+  background-color: #DFD7BF;
+  border-radius: 8px;
+}
+
+.tag:hover {
+  color: #white;
 }
